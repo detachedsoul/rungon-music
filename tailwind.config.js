@@ -1,8 +1,11 @@
 module.exports = {
   
   purge: {
-    // enabled: true,
-    // safeList: [],
+    enabled: true,
+    safeList: [
+      'nav-toggle',
+      'nav-container'
+    ],
     content: ['./*.html'],
   },
   darkMode: false, // or 'media' or 'class'

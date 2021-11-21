@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="custom-scrollbar">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +7,15 @@
     <title>Rungon &mdash; Music Streaming Dashboard</title>
 
     <!-- Preload stylesheets and scripts -->
-    <link rel="preload" href="assets/css/style.css" as="style">
-    <link rel="preload" href="assets/icons/all.min.css" as="style">
-    <link rel="preload" href="assets/icons/uicons.css" as="style">
+    <link rel="preload" href="./assets/css/style.css" as="style">
+    <link rel="preload" href="./assets/icons/all.min.css" as="style">
+    <link rel="preload" href="./assets/icons/uicons.css" as="style">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap" rel="stylesheet">
 
     <!-- Essential stylesheets -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body class="font-poppins">
     
@@ -27,7 +27,7 @@
             Rungon Music Streaming
         </a>
 
-        <a class="text-2xl" href="javascript:void(0)" aria-label="Navigation bar toggle button">
+        <a class="text-2xl nav-toggle" href="javascript:void(0)" aria-label="Navigation bar toggle button">
             <i class="relative fr fi-rr-menu-burger top-0.5"></i>
         </a>
 
@@ -38,7 +38,7 @@
 
 
         <!-- Navbar -->
-        <nav class="fixed bottom-0 z-10 flex flex-col w-4/5 gap-12 py-4 pl-4 overflow-y-auto transform -translate-x-full bg-white border-r border-gray-300 min-h-auto max-h-auto top-16 lg:py-8 lg:pl-8 xl:sticky xl:top-0 xl:translate-x-0 xl:w-auto xl:col-span-2">
+        <nav class="fixed bottom-0 z-10 flex flex-col w-4/5 gap-12 py-4 pl-4 overflow-y-auto transition delay-100 transform -translate-x-full bg-white border-r border-gray-300 custom-scrollbar nav-container min-h-auto max-h-auto top-16 transition-linear lg:py-8 lg:pl-8 xl:sticky xl:top-0 xl:translate-x-0 sm:w-1/2 md:w-1/4 lg:w-3/12 xl:col-span-2">
 
             <a class="hidden font-bold tracking-widest text-indigo-900 lg:inline-block font-pacifico" href="">
                 Rungon Music
@@ -189,7 +189,7 @@
         <!-- Center content -->
         <div class="px-4 py-8 lg:col-span-7 xl:col-span-7 md:py-8 sm:px-12 xl:px-8 lg:border-r lg:border-gray-300">
 
-            <div class="flex items-center justify-between gap-4 mb-8">
+            <div class="flex flex-wrap items-center justify-between gap-4 mb-8">
 
                 <ul class="flex gap-4">
 
@@ -229,10 +229,10 @@
 
                 <div class="grid gap-5 p-4 border border-gray-200 rounded-xl">
 
-                    <div class="flex items-center justify-between gap-4">
+                    <div class="flex flex-wrap items-center justify-between gap-4">
 
                         <h4 class="font-semibold text-indigo-900">
-                            Global Top 50
+                            Global Top
                         </h4>
 
                         <a class="font-semibold text-gray-400 hover:underline" href="">
@@ -369,7 +369,7 @@
 
                 <div class="grid gap-5 p-4 border border-gray-200 rounded-xl">
 
-                    <div class="flex items-center justify-between gap-4">
+                    <div class="flex flex-wrap items-center justify-between gap-4">
 
                         <h4 class="font-semibold text-indigo-900">
                             Songs You Might Like
@@ -523,7 +523,7 @@
 
                     <div class="grid gap-4">
 
-                        <div class="flex items-center justify-between flex-shrink-0 gap-8 py-2 overflow-y-auto">
+                        <div class="flex items-center justify-between flex-shrink-0 gap-8 py-2 overflow-y-auto custom-scrollbar">
 
                             <div class="flex items-center flex-shrink-0 gap-6">
                                 
@@ -569,7 +569,7 @@
 
                         </div>
 
-                        <div class="flex items-center justify-between flex-shrink-0 gap-8 py-2 overflow-y-auto">
+                        <div class="flex items-center justify-between flex-shrink-0 gap-8 py-2 overflow-y-auto custom-scrollbar">
 
                             <div class="flex items-center flex-shrink-0 gap-6">
                                 
@@ -615,7 +615,7 @@
 
                         </div>
 
-                        <div class="flex items-center justify-between flex-shrink-0 gap-8 py-2 overflow-y-auto">
+                        <div class="flex items-center justify-between flex-shrink-0 gap-8 py-2 overflow-y-auto custom-scrollbar">
 
                             <div class="flex items-center flex-shrink-0 gap-6">
                                 
@@ -911,8 +911,9 @@
 
 
    <!-- stylesheets and scripts -->
-   <link rel="stylesheet" href="assets/icons/all.min.css">
-   <link rel="stylesheet" href="assets/icons/uicons.css">
+   <link rel="stylesheet" href="./assets/icons/all.min.css">
+   <link rel="stylesheet" href="./assets/icons/uicons.css">
+   <script src="assets/js/main.js"></script>
 
 </body>
 </html>
