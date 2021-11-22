@@ -1340,6 +1340,10 @@ video {
     height: 11rem;
   }
 
+  .xl\:w-auto {
+    width: auto;
+  }
+
   .xl\:translate-x-0 {
     --tw-translate-x: 0px;
   }
